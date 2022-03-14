@@ -1,0 +1,16 @@
+@import '../vars';
+
+.navbar {
+    height: 140px;
+    background-color: $black !important;
+    border-bottom: 2px solid $mister-c-yellow;
+}
+
+.navbar-brand {
+    padding-left: 40px;
+}
+
+.nav-item {
+    padding-right: 40px;
+}
+

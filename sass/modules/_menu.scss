@@ -1,0 +1,44 @@
+@import '../vars';
+
+#menu {
+    height: 100vh;
+}
+
+.menu-left {
+    background-color: $mister-c-grey;
+}
+
+.pattern-overlay {
+    background: url(/images/panther-pattern.svg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-right {
+    background-color: $white;
+}
+
+.menu-navigation {
+    font-family: 'Saol';
+    font-size: 81px;
+    text-transform: uppercase;
+    padding: 24px;
+    margin-left: 32px;
+    cursor: grab;
+
+    .nav-link {
+        color: $black !important;
+    }
+
+    .menu-active {
+        font-size: 121.5px;
+    }
+
+    .menu-active::before {
+        content: url(/images/arrow-black-right.svg);
+        position: relative;
+        top: -25px;
+        padding-right: 16px;
+    }
+}

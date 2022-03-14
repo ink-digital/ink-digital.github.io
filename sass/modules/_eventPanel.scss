@@ -1,0 +1,118 @@
+@import '../vars';
+
+#panels {
+  border-bottom: 2px solid $mister-c-yellow;
+  border-top: 2px solid $mister-c-yellow;
+  margin-top: 60px;
+}
+
+.event-title {
+    color: #FFAF3E;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+}
+
+.panel
+{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 700ms ease-in;
+}
+
+.panel.active
+{
+    flex: 5;
+    text-align: center;
+}
+
+
+    .night {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 50px;
+    }
+
+      .block {
+        width: 0%;
+        height: inherit;
+        background: #ffb510;
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+        display: flex;
+      }
+
+      .night-logo {
+        -webkit-animation: mainFadeIn 2s forwards;
+        -o-animation: mainFadeIn 2s forwards;
+        animation: mainFadeIn 2s forwards;
+        animation-delay: 1.6s;
+        opacity: 0;
+        display: flex;
+        align-items: baseline;
+        position: relative;
+      }
+
+      @keyframes mainBlock {
+        0% {
+          width: 0%;
+          left: 0;
+      
+        }
+        50% {
+          width: 100%;
+          left: 0;
+      
+        }
+        100% {
+          width: 0;
+          left: 100%;
+        }
+      }
+      
+      @keyframes secBlock {
+        0% {
+          width: 0%;
+          left: 0;
+      
+        }
+        50% {
+          width: 100%;
+          left: 0;
+      
+        }
+        100% {
+          width: 0;
+          left: 100%;
+        }
+      }
+      
+      @keyframes mainFadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+@media(max-width:480px)
+{
+    .container
+    {
+        width: 100vw;
+    }
+
+    .panel:nth-last-of-type(6),
+    .panel:nth-last-of-type(7)
+    {
+        display: none;
+    }
+}
