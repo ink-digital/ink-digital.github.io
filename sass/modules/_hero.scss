@@ -1,0 +1,10 @@
+@import '../vars';
+
+#hero {
+    height: 80vh;
+    background-image: url('/images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 2px solid $mister-c-yellow;
+}
