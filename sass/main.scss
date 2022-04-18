@@ -1,0 +1,345 @@
+@import '_vars';
+@import 'modules/eventPanel';
+@import 'modules/navigation';
+@import 'modules/hero';
+@import 'modules/about';
+@import 'modules/music';
+@import 'modules/menu';
+@import 'modules/reserve';
+@import 'modules/footer';
+@import 'modules/modal';
+
+body {
+    background: $black !important;
+}
+
+// Headings
+
+h1 {
+    font-family: 'Saol', sans-serif;
+    font-size: 121.5px;
+}
+
+h2 {
+    font-family: 'Saol', sans-serif;
+    font-size: 81px;
+}
+
+h3 {
+    font-family: 'Saol', sans-serif;
+    font-size: 54px;
+}
+
+.underline--magical:hover {
+    background-image: linear-gradient(120deg, $mister-c-yellow 0%, $mister-c-yellow 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 80%;
+    transition: background-image 0.50s ease-in;
+}
+
+// Paragraph
+
+p {
+    font-family: 'Univers', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 36px;
+}
+
+// Buttons
+
+.mister-c-button-primary {
+    outline: 2px solid $mister-c-yellow;
+    text-transform: uppercase;
+    color: $mister-c-yellow;
+    width: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mister-c-button-primary:hover {
+    text-decoration: none;
+    color: $mister-c-yellow;
+}
+
+.hvr-sweep-to-top:before {
+    background: $mister-c-yellow !important;
+}
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #000000 !important;
+    color: white;
+  }
+
+.mister-c-button-secondary {
+    outline: 2px solid $black;
+    text-transform: uppercase;
+    color: $black;
+    width: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    background: none !important;
+    border: none;
+}
+
+.mister-c-button-secondary:hover {
+    text-decoration: none;
+}
+
+.mister-c-button-secondary:visited {
+    text-decoration: none;
+    outline: 2px solid $black;
+}
+
+.btn-outline-secondary {
+    color: $mister-c-yellow !important;
+    border-color: $mister-c-yellow !important;
+    border-radius: 0 !important;
+}
+
+.btn-outline-secondary:hover {
+    background: $mister-c-yellow !important;
+    color: white !important;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}
+
+.scroll-icon {
+    background:url('/images/arrow_down_white.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 81px;
+    height: 81px;
+    margin-bottom: 24px;
+}
+
+[data-form="296eb013-b764-11ec-9258-0241b9615763"] .emailoctopus-error-message, [data-form="296eb013-b764-11ec-9258-0241b9615763"] .emailoctopus-success-message {
+    color: green;
+}
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #about {
+        height: auto;
+    }
+
+    #cocktails {
+        white-space: normal;
+        // height: auto;
+        margin-bottom: 0;
+
+        h1 {
+            font-size: 72px;
+            padding: 0;
+            margin-top: 8px;
+        }
+    }
+
+    #interior {
+        white-space: normal;
+        // height: auto;
+        margin-bottom: 0;
+
+        h1 {
+            font-size: 72px;
+        }
+    }
+
+    #cuisine {
+        white-space: normal;
+        // height: auto;
+        margin-bottom: 0;
+
+        h1 {
+            font-size: 72px;
+            padding: 40px;
+        }
+    }
+
+    #music {
+        height: auto;
+        padding: 36px;
+
+        h1 {
+            font-size: 72px;
+        }
+    }
+
+    #reserve {
+        height: auto;
+        
+        h1 {
+            font-size: 72px;
+        }
+    }
+
+    #spotify-select {
+        margin-bottom: 40px;
+    }
+
+    #player {
+        justify-content: center !important;
+    }
+
+    // .spotify {
+    //     height: auto;
+    //     width: auto;
+    // }
+
+    .menu-navigation {
+        font-family: 'Saol';
+        font-size: 54px;
+        text-transform: uppercase;
+        padding: 24px;
+        margin-left: 32px;
+        cursor: grab;
+    
+        .nav-link {
+            color: $black !important;
+        }
+    
+        .menu-active {
+            font-size: 72px;
+        }
+    
+        .menu-active::before {
+            content: "";
+        }
+    }
+
+    .footer-navigation {
+        text-align: center;
+    }
+
+    #reserve {
+        a {
+            font-size: 12px;
+        }
+    }
+
+    #panels {
+        margin: 0 -15px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #cocktails {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #cuisine {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #interior {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #spotify-select {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    .menu-navigation {
+        font-size: 54px;
+    }
+
+    .menu-active {
+        font-size: 81px !important;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    #cocktails {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #cuisine {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #interior {
+        h1 {
+            font-size: 81px !important;
+            padding-right: 60px;
+        }
+    }
+
+    #reserve {
+        height: 100vh;
+        padding-bottom: 60px;
+    }
+
+    #newsletter-block {
+        margin-right: 40px;
+    }
+
+    .footer-navigation {
+        .nav-link {
+            padding-left: 0 !important;
+        }
+    }
+
+    .carousel {
+        max-width: 600px;
+        margin: 0 auto;
+        height: 100vh;
+
+        .carousel-control-next {
+            padding-left: 60px;
+        }
+
+        .carousel-control-prev {
+            padding-right: 60px;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    #cocktails {
+        h1 {
+            font-size: 121.5px !important;
+        }
+    }
+
+    #cuisine {
+        h1 {
+            font-size: 121.5px !important;
+        }
+    }
+
+    #interior {
+        h1 {
+            font-size: 121.5px !important;
+        }
+    }
+}
