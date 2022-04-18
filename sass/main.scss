@@ -226,6 +226,10 @@ p {
             font-size: 12px;
         }
     }
+
+    #panels {
+        margin: 0 -15px;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -271,6 +275,56 @@ p {
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
+    #cocktails {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #cuisine {
+        h1 {
+            font-size: 81px !important;
+        }
+    }
+
+    #interior {
+        h1 {
+            font-size: 81px !important;
+            padding-right: 60px;
+        }
+    }
+
+    #reserve {
+        height: 100vh;
+        padding-bottom: 60px;
+    }
+
+    #newsletter-block {
+        margin-right: 40px;
+    }
+
+    .footer-navigation {
+        .nav-link {
+            padding-left: 0 !important;
+        }
+    }
+
+    .carousel {
+        max-width: 600px;
+        margin: 0 auto;
+        height: 100vh;
+
+        .carousel-control-next {
+            padding-left: 60px;
+        }
+
+        .carousel-control-prev {
+            padding-right: 60px;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
     #cocktails {
         h1 {
             font-size: 121.5px !important;
